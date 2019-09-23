@@ -1,0 +1,7 @@
+bazel-bazelnodenested
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+.DS_Store
+**/node_modules
