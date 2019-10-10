@@ -4,7 +4,7 @@ genrule(
     cmd = "echo 'Overall build completed successfully' > $@",
     message = "Building ui",
     tools = [
-        "//project1:app1",
-        "//project2:app2"
+        "//project1:app1_orchestrator",
+        "//project2:app2_orchestrator"
     ],
 )

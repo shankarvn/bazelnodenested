@@ -10,3 +10,16 @@ nodejs_binary(
   ],
   entry_point = ":build.js",
 )
+
+genrule(
+    name = "app2_orchestrator",
+    srcs = glob([
+        "*",
+        "src/**/*",
+    ]),
+    outs = ["app2_virtual"],
+    cmd = "$(location :app2) . && cp -rf . $(OUTS)",
+    local = 1,
+    message = "Building Dev server",
+    tools = [":app2"],
+)
