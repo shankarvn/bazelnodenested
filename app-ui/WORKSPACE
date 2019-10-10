@@ -46,8 +46,8 @@ node_repositories(
 npm_install(
     name = "npm1",
     always_hide_bazel_files = True,
-    package_json = "//app-ui/project1:package.json",
-    package_lock_json = "//app-ui/project1:package-lock.json",
+    package_json = "//project1:package.json",
+    package_lock_json = "//project1:package-lock.json",
 )
 
 
@@ -55,8 +55,8 @@ npm_install(
 npm_install(
     name = "npm2",
     always_hide_bazel_files = True,
-    package_json = "//app-ui/project2:package.json",
-    package_lock_json = "//app-ui/project2:package-lock.json",
+    package_json = "//project2:package.json",
+    package_lock_json = "//project2:package-lock.json",
 )
 
 
