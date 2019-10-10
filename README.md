@@ -2,4 +2,5 @@
 git clone https://github.com/shankarvn/bazelnodenested.git
 
 # Execute the build
-bazel build //app-ui:app_ui
+cd app-ui
+bazel build //:app_ui

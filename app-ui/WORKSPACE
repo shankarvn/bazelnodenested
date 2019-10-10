@@ -2,10 +2,10 @@ workspace(
     name="paceappui",
     managed_directories = {
         "@npm1": [
-            "app-ui/project1/node_modules"
+            "project1/node_modules"
         ],
         "@npm2": [
-            "app-ui/project2/node_modules"
+            "project2/node_modules"
         ]
     },
 )
